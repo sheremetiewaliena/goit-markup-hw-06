@@ -43,6 +43,7 @@ img {
 /* Phone screen */
 .container {
   max-width: 320px;
+
   width: 100%;
   padding-right: 16px;
   padding-left: 16px;
@@ -490,6 +491,10 @@ img {
   }
 }
 /* section-our team */
+
+.our-team-color {
+  background-color: var(--color-cloud);
+}
 .our-team {
   color: var(--color-navy-blue);
   font-weight: 700;
@@ -503,18 +508,32 @@ img {
 .our-team-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
-
-.our-team-color {
-  background-color: var(--color-cloud);
-  padding-top: 96px;
-  padding-bottom: 96px;
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
 }
+@media screen and (min-width: 1158px) {
+  .our-team-list {
+    display: flex;
+    flex-wrap: nowrap;
 
+    justify-content: center;
+    gap: 24px;
+  }
+}
 .our-team-photo {
   background-color: var(--color-white);
-  flex-basis: calc((100%-72px) / 4);
+
   border-radius: 0px 0px 4px 4px;
   border-radius: 0px 0px 4px 4px;
   background: var(--color-white, #fff);
@@ -522,6 +541,17 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+@media screen and (min-width: 768px) {
+  .our-team-photo {
+    flex-basis: calc((100%-24px) / 2);
+  }
+}
+@media screen and (min-width: 1158px) {
+  .our-team-photo {
+    flex-basis: calc((100%-72px) / 4);
+  }
+}
+
 .our-team-man {
   padding: 32px 0;
 }
@@ -592,14 +622,49 @@ img {
 .our-portfolio-color {
   background-color: inherit;
   display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  row-gap: 48px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) {
+  .our-portfolio-color {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .our-portfolio-color {
+    background-color: inherit;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+  }
 }
 
+.our-portfolio-color img {
+  width: 100%;
+}
 .our-portfolio-card {
-  width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .our-portfolio-card {
+    flex-basis: calc((100%-24px) / 2);
+    width: 356px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-portfolio-card {
+    width: calc((100% - 48px) / 3);
+  }
 }
 .our-portfolio-card:hover,
 .our-portfolio-card:focus {
@@ -620,6 +685,7 @@ img {
 .our-portfolio-img {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .our-portfolio-overlay {
   background-color: var(--color-iris);
@@ -675,10 +741,26 @@ img {
 }
 
 .footer-section {
-  align-items: baseline;
   background-color: var(--color-navy-blue);
-  padding: 100px 0;
+  padding: 96px 0;
+  align-items: center;
 }
+
+@media screen and (min-width: 768px) {
+  .footer-section {
+    align-items: baseline;
+    background-color: var(--color-navy-blue);
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .footer-section {
+    align-items: baseline;
+    background-color: var(--color-navy-blue);
+    padding: 100px 0;
+  }
+}
+
 .footer-text {
   color: var(--color-cloud);
   font-size: 16px;
@@ -695,9 +777,18 @@ img {
 .container-footer {
   display: flex;
 
-  align-items: baseline;
+  flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1158px) {
+  .container-footer {
+    display: flex;
+
+    align-items: baseline;
+  }
+}
 .footer-icons {
   display: flex;
   gap: 16px;
@@ -745,7 +836,16 @@ img {
 }
 .footer-email {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1158px) {
+  .footer-email {
+    display: flex;
+    gap: 24px;
+  }
 }
 .footer-label {
   border-radius: 4px;
