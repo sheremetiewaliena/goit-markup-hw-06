@@ -37,8 +37,11 @@ h5,
 h6 {
   margin: 0;
 }
-img {
+img,
+svg {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Phone screen */
 .container {
@@ -287,13 +290,36 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/people-office_bg.jpg');
+    url('../images/hero-bg/Dark-bg.mob.jpg');
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg/Dark-bg.mob@2x-min.jpg');
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-section {
     max-width: 1158px;
     background-position: center center;
     padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg/Dark-bg.tab.jpg');
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg/Dark-bg.tab@2x.jpg');
   }
 }
 @media screen and (min-width: 1158px) {
@@ -302,6 +328,20 @@ img {
     padding: 188px 0;
     background-position: center center;
     margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg/people-office\ 1.des.jpg');
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-bg/people-office\ 1.des@2x.jpg');
   }
 }
 .hero-text {
@@ -686,7 +726,21 @@ img {
 .our-portfolio-img {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 288px;
+  height: 280px;
+}
+
+@media screen and (min-width: 768px) {
+  .our-portfolio-img {
+    width: 356px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .our-portfolio-img {
+    width: 360px;
+    height: 300px;
+  }
 }
 .our-portfolio-overlay {
   background-color: var(--color-iris);

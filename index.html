@@ -123,7 +123,8 @@
             <ul class="our-team-list">
 
                <li class="our-team-photo">
-                  <img src="./images/mark.jpg" alt="Mark Guerrero" width="264">
+                  <img srcset="images/team/Mark.jpg 1x, ./images/team/Mark@2x.jpg @2x" src="./images/team/Mark.jpg"
+                     alt="Mark Guerrero" width="264">
                   <div class="our-team-man">
                      <h3 class="our-team-h">Mark Guerrero</h3>
                      <p class="our-team-text">Product Designer</p>
@@ -161,7 +162,8 @@
                </li>
 
                <li class="our-team-photo">
-                  <img src="./images/tom.jpg" alt="Tom Ford" width="264">
+                  <img srcset="./images/team/Tom.jpg 1x, ./images/team/Tom@2x.jpg @2x" src="./images/team/Tom.jpg"
+                     alt="Tom Ford" width="264">
                   <div class="our-team-man">
                      <h3 class="our-team-h">Tom Ford</h3>
                      <p class="our-team-text">Frontend Developer</p>
@@ -199,7 +201,8 @@
                </li>
 
                <li class="our-team-photo">
-                  <img src="./images/camila.jpg" alt="Camila Garcia" width="264">
+                  <img srcset="./images/team/Camila.jpg 1x, ./images/team/Camila@2x.jpg @2x"
+                     src="./images/team/Camila.jpg" alt="Camila Garcia" width="264">
                   <div class="our-team-man">
                      <h3 class="our-team-h">Camila Garcia</h3>
                      <p class="our-team-text">Marketing</p>
@@ -237,7 +240,8 @@
                </li>
 
                <li class="our-team-photo">
-                  <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264">
+                  <img srcset="./images/team/Daniel.jpg 1x, ./images/team/Daniel@2x.jpg @2x"
+                     src="./images/team/Daniel.jpg" alt="Daniel Wilson" width="264">
                   <div class="our-team-man">
                      <h3 class="our-team-h">Daniel Wilson</h3>
                      <p class="our-team-text">UI Designer</p>
@@ -289,8 +293,18 @@
             <ul class="our-portfolio-color">
                <li class="our-portfolio-card">
                   <div class="our-portfolio-img">
-
-                     <img src="./images/bankingapp.jpg" alt="Banking App" width="360">
+                     <picture>
+                        <!-- Mobile -->
+                        <source media="(max-width: 767px)"
+                           srcset="./images/portfolio/banking/banking.mob-min.jpg 1x, ./images/portfolio/banking/banking.mob@2x-min.jpg 2x">
+                        <!-- Tablet -->
+                        <source media="(min-width: 768px)"
+                           srcset="./images/portfolio/banking/banking.tab-min.jpg 1x, ./images/portfolio/banking/banking.tab@2x-min.jpg 2x">
+                        <!-- Desktop -->
+                        <source media="(min-width: 1158px)" srcset="./images/portfolio/banking/banking.desk-min.jpg 1x, 
+                                   ./images/portfolio/banking/banking.desk@2x-min.jpg 2x">
+                        <img src="./images/portfolio/banking/Banking.desk-min.jpg" alt="Banking App" width="360">
+                     </picture>
 
                      <p class="our-portfolio-overlay our-text">14 Stylish and User-Friendly App Design Concepts · Task
                         Manager App ·
@@ -306,7 +320,18 @@
                </li>
                <li class="our-portfolio-card">
                   <div class="our-portfolio-img">
-                     <img src="./images/cashlesspayment.jpg" alt="Cashless Payment" width="360">
+                     <picture>
+                        <!-- Mobile -->
+                        <source media="(max-width: 767px)" srcset="./images/portfolio/cashless/cashless.mob-min.jpg 1x, 
+                                   ./images/portfolio/cashless/cashless.mob@2x-min.jpg 2x">
+                        <!-- Tablet -->
+                        <source media="(min-width: 768px)" srcset="./images/portfolio/cashless/cashless.tab-min.jpg 1x, 
+                                   ./images/portfolio/cashless/cashless.tab@2x-min.jpg 2x">
+                        <!-- Desktop -->
+                        <source media="(min-width: 1158px)" srcset="./images/portfolio/cashless/cashless.desk-min.jpg 1x, 
+                                   ./images/portfolio/cashless/cashless.desk@2x-min.jpg 2x">
+                        <img src="./images/portfolio/cashless/cashless.desk-min.jpg" alt="Cashless Payment" width="360">
+                     </picture>
 
                      <p class="our-portfolio-overlay our-text">14 Stylish and User-Friendly App Design Concepts · Task
                         Manager App ·
@@ -321,7 +346,20 @@
                </li>
                <li class="our-portfolio-card">
                   <div class="our-portfolio-img">
-                     <img src="./images/meditationapp.jpg" alt="Meditation App" width="360">
+                     <picture>
+                        <!-- Mobile -->
+                        <source media="(max-width: 767px)" srcset="./images/portfolio/meditation/meditation.mob-min.jpg 1x, 
+                                ./images/portfolio/meditation/meditation.mob@2x-min.jpg 2x">
+                        <!-- Tablet -->
+                        <source media="(min-width: 768px)" srcset="./images/portfolio/meditation/meditation.tab-min.jpg 1x, 
+                                 ./images/portfolio/meditation/meditation.tab@2x-min.jpg 2x">
+                        <!-- Desktop -->
+                        <source media="(min-width: 1158px)" srcset="./images/portfolio/meditation/meditation.desk-min.jpg 1x, 
+                                 ./images/portfolio/meditation/meditations.desk@2x-min.jpg 2x">
+
+                        <img src="./images/portfolio/meditation/meditation.desk-min.jpg" alt="Meditation App"
+                           width="360">
+                     </picture>
 
                      <p class="our-portfolio-overlay our-text">14 Stylish and User-Friendly App Design Concepts · Task
                         Manager App ·
@@ -336,7 +374,19 @@
                </li>
                <li class="our-portfolio-card">
                   <div class="our-portfolio-img">
-                     <img src="./images/taxiservice.jpg" alt="Taxi Service" width="360">
+                     <picture>
+                        <!-- Mobile -->
+                        <source media="(max-width: 767px)" srcset="./images/portfolio/taxi/taxi.mob-min.jpg 1x, 
+                                ./images/portfolio/taxi/taxi.mob@2x-min.jpg 2x">
+                        <!-- Tablet -->
+                        <source media="(min-width: 768px)" srcset="./images/portfolio/taxi/taxi.tab-min.jpg 1x, 
+                                ./images/portfolio/taxi/taxi.tab@2x-min.jpg 2x">
+                        <!-- Desktop -->
+                        <source media="(min-width: 1158px)" srcset="./images/portfolio/taxi/taxi.desk-min.jpg 1x, 
+                                ./images/portfolio/taxi/taxi.desk@2x-min.jpg 2x">
+
+                        <img src="./images/portfolio/taxi/taxi.desk.jpg" alt="Taxi Service" width="360">
+                     </picture>
 
                      <p class="our-portfolio-overlay our-text">14 Stylish and User-Friendly App Design Concepts · Task
                         Manager App ·
@@ -351,8 +401,19 @@
                </li>
                <li class="our-portfolio-card">
                   <div class="our-portfolio-img">
-                     <img src="./images/screenilustrations.jpg" alt="Screen Illustrations" width="360">
+                     <picture>
+                        <!-- Mobile -->
+                        <source media="(max-width: 767px)" srcset="./images/portfolio/screen/screen.mob-min.jpg 1x, 
+                                   ./images/portfolio/screen/screen.mob@2x-min.jpg 2x">
+                        <!-- Tablet -->
+                        <source media="(min-width: 768px)" srcset="./images/portfolio/screen/screen.tab-min.jpg 1x, 
+                                    ./images/portfolio/screen/screen.tab@2x-min.jpg 2x">
+                        <!-- Desktop -->
+                        <source media="(min-width: 1158px)" srcset="./images/portfolio/screen/screen.desk-min.jpg 1x, 
+                                   ./images/portfolio/screen/screen.desk@2x-min.jpg 2x">
 
+                        <img src="./images/portfolio/screen/screen.desk-min.jpg" alt="Screen Illustrations" width="360">
+                     </picture>
                      <p class="our-portfolio-overlay our-text">14 Stylish and User-Friendly App Design Concepts · Task
                         Manager App ·
                         Calorie Tracker App · Exotic Fruit Ecommerce App ·
@@ -366,7 +427,19 @@
                </li>
                <li class="our-portfolio-card">
                   <div class="our-portfolio-img">
-                     <img src="./images/onlinecourses.jpg" alt="Online Courses" width="360">
+                     <picture>
+                        <!-- Mobile -->
+                        <source media="(max-width: 767px)" srcset="./images/portfolio/online/online.mob-min.jpg 1x, 
+                                ./images/portfolio/online/online.mob@2x-min.jpg 2x">
+                        <!-- Tablet -->
+                        <source media="(min-width: 768px)" srcset="./images/portfolio/online/online.tab-min.jpg 1x, 
+                                ./images/portfolio/online/online.tab@2x-min.jpg 2x">
+                        <!-- Desktop -->
+                        <source media="(min-width: 1158px)" srcset="./images/portfolio/online/online.desk-min.jpg 1x, 
+                               ./images/portfolio/online/online.desk@2x-min.jpg 2x">
+
+                        <img src="./images/portfolio/online/online.desk-min.jpg" alt="Online Courses" width="360">
+                     </picture>
 
 
                      <p class="our-portfolio-overlay our-text">14 Stylish and User-Friendly App Design Concepts · Task
@@ -451,85 +524,86 @@
 
 
    <!-- modal -->
-   <!--  
-   <div class="backdrop is-open">
+
+   <div class="backdrop is-closed">
       <div class="modal">
--->
-   <!-- checkbox -->
-   <!--  
-   <button class="modal-button-close" type="button">
-      <svg class="button-close-svg" width="8" height="8">
-         <use href="./images/modal-icons.svg#icon-close"></use>
-      </svg>
-   </button>
 
-   <p class="modal-text">
-      Leave your contacts and we will call you back
-   </p>
-   <form>
-      <div class="modal-window">
-         <label class="modal-label" for="user-name">Name</label>
-         <div class="modal-input-wrap">
-            <input class="modal-input" type="text" id="user-name" name="user-name" required />
-            <svg class="modal-fill-black" width="18" height="24">
-               <use href="./images/icons.svg#icon-person1"> </use>
+         <!-- checkbox -->
 
+         <button class="modal-button-close" type="button">
+            <svg class="button-close-svg" width="8" height="8">
+               <use href="./images/modal-icons.svg#icon-close"></use>
             </svg>
-         </div>
+         </button>
+
+         <p class="modal-text">
+            Leave your contacts and we will call you back
+         </p>
+         <form>
+            <div class="modal-window">
+               <label class="modal-label" for="user-name">Name</label>
+               <div class="modal-input-wrap">
+                  <input class="modal-input" type="text" id="user-name" name="user-name" required />
+                  <svg class="modal-fill-black" width="18" height="24">
+                     <use href="./images/icons.svg#icon-person1"> </use>
+
+                  </svg>
+               </div>
+            </div>
+
+            <div class="modal-window">
+               <label class="modal-label" for="user-phone">Phone</label>
+               <div class="modal-input-wrap">
+                  <input class="modal-input" type="tel" id="user-phone" name="user-phone" required />
+                  <svg class="modal-fill-black" width="18" height="24">
+                     <use href="./images/icons.svg#icon-phone1"> </use>
+
+                  </svg>
+               </div>
+            </div>
+            <div class="modal-window">
+               <label class="modal-label" for="user-email">Email</label>
+               <div class="modal-input-wrap">
+                  <input class="modal-input" type="email" id="user-email" name="user-email" required />
+                  <svg class="modal-fill-black" width="18" height="24">
+                     <use href="./images/icons.svg#icon-email">
+                     </use>
+
+                  </svg>
+               </div>
+            </div>
+            <div class="text-area">
+               <label class="modal-label" for="user-comment">Comment</label>
+               <textarea class="modal-comment" name="user-comment" id="user-comment"
+                  placeholder="Text input"></textarea>
+            </div>
+
+            <!-- checkbox -->
+
+            <div class="checkbox-container">
+
+               <input class="checkbox-input visually-hidden" type="checkbox" name="user-privacy" value="true"
+                  id="user-privacy" />
+
+               <label class="checkbox-label" for="user-privacy">
+                  <span class="checkbox-span">
+                     <svg class="checkbox-svg" width="10" height="8">
+                        <use href="./images/icons.svg#icon-check">
+                        </use>
+                     </svg>
+                  </span>I accept the terms and conditions of the
+                  <a class="modal-privacy-text" href="#" target="_blank">Privacy Policy</a>
+               </label>
+            </div>
+
+            <button class="modal-button" type="submit">Send</button>
+         </form>
+
       </div>
-
-      <div class="modal-window">
-         <label class="modal-label" for="user-phone">Phone</label>
-         <div class="modal-input-wrap">
-            <input class="modal-input" type="tel" id="user-phone" name="user-phone" required />
-            <svg class="modal-fill-black" width="18" height="24">
-               <use href="./images/icons.svg#icon-phone1"> </use>
-
-            </svg>
-         </div>
-      </div>
-      <div class="modal-window">
-         <label class="modal-label" for="user-email">Email</label>
-         <div class="modal-input-wrap">
-            <input class="modal-input" type="email" id="user-email" name="user-email" required />
-            <svg class="modal-fill-black" width="18" height="24">
-               <use href="./images/icons.svg#icon-email">
-               </use>
-
-            </svg>
-         </div>
-      </div>
-      <div class="text-area">
-         <label class="modal-label" for="user-comment">Comment</label>
-         <textarea class="modal-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
-      </div>
--->
-   <!-- checkbox -->
-   <!-- 
-      <div class="checkbox-container">
-
-         <input class="checkbox-input visually-hidden" type="checkbox" name="user-privacy" value="true"
-            id="user-privacy" />
-
-         <label class="checkbox-label" for="user-privacy">
-            <span class="checkbox-span">
-               <svg class="checkbox-svg" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check">
-                  </use>
-               </svg>
-            </span>I accept the terms and conditions of the
-            <a class="modal-privacy-text" href="#" target="_blank">Privacy Policy</a>
-         </label>
-      </div>
-
-      <button class="modal-button" type="submit">Send</button>
-   </form>
-
    </div>
-   </div>
-   -->
+
    <!-- menu -->
-   <!--
+
    <div class="container-menu">
       <button class="mobile-button-close" type="button">
          <svg class="mobile-button-close-svg" width="8" height="8">
@@ -580,7 +654,7 @@
          </li>
       </ul>
    </div>
--->
+
 
 </body>
 
