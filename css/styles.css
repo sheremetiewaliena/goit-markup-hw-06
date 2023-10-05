@@ -52,23 +52,26 @@ svg {
   padding-left: 16px;
   margin-left: auto;
   margin-right: auto;
-
+  /*  
   outline: 2px solid red;
   outline-offset: -2px;
+  */
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     width: 768px;
+    /* 
     outline: 2px solid blue;
     outline-offset: -2px;
+    */
   }
 }
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     width: 1158px;
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }
 
@@ -87,17 +90,15 @@ svg {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  min-width: 320px;
-  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .header-main {
-    max-width: 1158px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1158px) {
   .header-main {
-    max-width: 1440px;
+    max-width: 100%;
   }
 }
 .header-inern.container {
@@ -117,16 +118,20 @@ svg {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .header-inern.container {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .header-nav {
   display: flex;
   align-items: center;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
-  .header-nav {
-    margin-right: 10px;
-  }
-}
+
 @media screen and (min-width: 1158px) {
   .header-nav {
     display: flex;
@@ -153,6 +158,7 @@ svg {
   }
 }
 .header-logo {
+  font-family: Raleway sans-serif;
   align-items: center;
   color: var(--color-iris);
   font-weight: 700;
@@ -850,11 +856,12 @@ svg {
   font-size: 16px;
   line-height: 1.5;
   max-width: 288px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 @media screen and (min-width: 768px) {
   .footer-text {
     max-width: 264px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -863,7 +870,7 @@ svg {
     font-size: 16px;
     line-height: 1.5;
     width: 264px;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .footer-link {
@@ -903,10 +910,15 @@ svg {
   .container-footer {
     display: flex;
     flex-direction: row;
+    gap: 24px;
     flex-wrap: wrap;
     align-items: baseline;
     width: 768px;
-    padding-left: 108px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container-footer.container {
+    width: 584px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -915,7 +927,7 @@ svg {
     align-items: baseline;
     flex-wrap: nowrap;
     width: 1158px;
-    padding-left: 0;
+    gap: 0;
   }
 }
 .footer-icons {
@@ -925,7 +937,7 @@ svg {
   gap: 16px;
   transition-duration: 250ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 @media screen and (min-width: 768px) {
   .footer-icons {
@@ -941,7 +953,7 @@ svg {
     gap: 16px;
     transition-duration: 250ms;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .footer-icons-list {
@@ -972,7 +984,6 @@ svg {
 
 @media screen and (min-width: 768px) {
   .footer-margin {
-    margin-right: 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1400,8 +1411,7 @@ svg {
 /*mobile*/
 .container-menu {
   position: fixed;
-  opacity: 0;
-  width: 320px;
+  width: 100%;
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -1411,6 +1421,18 @@ svg {
   padding: 72px 24px 40px 16px;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .container-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container-menu {
+    display: none;
+  }
 }
 .container-menu.is-open {
   transform: translateX(0);
