@@ -884,7 +884,6 @@ svg {
   line-height: 1.5; /* 150% */
   color: var(--color-white);
   margin-bottom: 16px;
-  margin-top: 72px;
   font-weight: 500;
   display: block;
   text-align: center;
@@ -894,6 +893,7 @@ svg {
   .footer-link {
     display: inline-block;
     align-items: left;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -938,14 +938,12 @@ svg {
   gap: 16px;
   transition-duration: 250ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 72px;
 }
 @media screen and (min-width: 768px) {
   .footer-icons {
     display: flex;
     transition-duration: 250ms;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -953,7 +951,6 @@ svg {
     display: flex;
     transition-duration: 250ms;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 0;
   }
 }
 .footer-icons-list {
@@ -1025,11 +1022,15 @@ svg {
 }
 .footer-margin-icons {
   margin: 0;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-margin-icons {
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) {
